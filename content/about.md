@@ -6,20 +6,7 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "Hugo Authors"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+I am currently a student in undergraduate institute of East China Normal University (and that's why my avatar's name is ECNUjohnny). My future plan is to pursue a Phd degree in the USA, so perhaps in the future I will become "Taxas-Austain johnny", "Ohio-State johnny", or even "MIT johnny" if you think I can achieve such achievement!  
 
-Hugo makes use of a variety of open source projects including:
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+My major direction is Computer Graphics and I am doing some pertinent researches supervised and instructed by Professor ChenHui Li (Chenhui.Li), and I also study some basic algorithms as a way to hone my cerebral skills. Meanwhile, I am trying to make a game project myself as my interest.
