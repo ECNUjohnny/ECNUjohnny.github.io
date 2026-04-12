@@ -5,6 +5,7 @@
 body {
     font-family: "Fira Code", monospace;
     font-size: 22px;
+    font-weight: 600;
 }
 
 /* 专门为代码块开启“连字”效果 (Font Ligatures) */
