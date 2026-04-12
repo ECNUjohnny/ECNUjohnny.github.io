@@ -2,13 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 /* 全站应用 Fira Code 字体 */
-body {
-    font-family: "Fira Code", monospace;
-}
-
-/* 专门为代码块开启“连字”效果 (Font Ligatures) */
-code, pre {
-    font-family: "Fira Code", monospace !important;
-    font-variant-ligatures: contextual; /* 开启连字 */
-    text-rendering: optimizeLegibility;
+.content
+{
+    font-size: 23px;
 }
