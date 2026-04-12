@@ -14,3 +14,62 @@ code, pre {
     font-variant-ligatures: contextual; /* 开启连字 */
     text-rendering: optimizeLegibility;
 }
+
+/* 开启 CSS Grid 网格布局 */
+.projects-grid {
+    display: grid;
+    /* 核心魔法：自动按列排列，每列最小 300px，空间够就并排，不够就自动换行 */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem; /* 卡片之间的间距 */
+    margin-top: 2rem;
+}
+
+/* 单个卡片的内部排版 */
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-date {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.2rem;
+}
+
+.project-title {
+    margin: 0 0 0.8rem 0;
+    font-size: 1.3rem;
+}
+
+/* 统一图片大小，防止被长宽比不同的图撑破 */
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* 像贴图一样裁切填充 */
+    border-radius: 6px; /* 微微的圆角 */
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease;
+}
+
+/* 鼠标悬停图片微微放大的特效 */
+.project-image:hover {
+    transform: scale(1.03);
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex-grow: 1; /* 让底部的链接始终对齐在最下面 */
+    margin-bottom: 1rem;
+}
+
+.project-links a {
+    font-size: 0.85rem;
+    margin-right: 15px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project-links a:hover {
+    text-decoration: underline;
+}
