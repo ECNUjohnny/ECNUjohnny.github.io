@@ -3,9 +3,9 @@
 
 /* 全站应用 Fira Code 字体 */
 body {
-    font-family: "Fira Code", monospace;
-    font-size: 22px;
-    font-weight: 600;
+    
+    font-size: 25px;
+    
 }
 
 /* 专门为代码块开启“连字”效果 (Font Ligatures) */
