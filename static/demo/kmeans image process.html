@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <style>
+        body 
+        {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        .control-panel 
+        {
+            /*display: flex;*/
+            margin-bottom: 20px;
+            gap: 25px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        button 
+        {
+            padding: 8px 16px;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 1px solid #adb5bd;
+            border-radius: 4px;
+            background-color: #fff;
+            transition: all 0.2s;
+        }
+        button:hover 
+        {
+            background-color: #e9ecef;
+        }
+        .btn-group-title 
+        {
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .spacing-right
+        {
+            margin-right: 30px;
+        }
+        #chart-container 
+        {
+            width: 800px;
+            height: 600px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        #kValueDisplay
+        {
+            margin-right: 30px;
+        }
+        .main-content 
+        {
+            display: flex;
+            gap: 20px; 
+        }
+        #upload-container
+        {
+            width: 800px; 
+            height: 600px; 
+            border: 2px dashed #adb5bd; 
+            border-radius: 8px;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            cursor: pointer; 
+            transition: all 0.3s;
+            text-align: center;
+        }
+        #upload-container.dragover 
+        {
+            background-color: #e2e6ea;
+            border-color: #0d6efd;
+        }
+        #upload-container img 
+        {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; 
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="control-panel">
+    <label for = "kSlider">调整k值</label>
+    <input type = "range" id = "kSlider" min = "5" max = "11" value = "5">
+    <span id="kValueDisplay">5</span>
+
+    <button class = "spacing-right" id="btnBar">显示柱状图</button>
+    <button class = "spacing-right" id="btnPie">显示饼状图</button>
+    <button class = "spacing-right" id="RGB">使用RGB空间</button>
+    <button class = "spacing-right" id="LAB">使用LAB空间</button>
+</div>
+
+<div class = "main-content">
+
+    <div id = "upload-container">
+        <p>请拖入图片</p>
+        <p style = "font-size: 14px; color: #be1818;">或点击选择文件</p>
+        <input type = "file" id = "fileInput" accept = "image/*" style = "display: none;">
+    </div>  
+
+    <div id = "chart-container"></div>
+
+</div>
+    
+
+<script type = "text/javascript">
+
+const sliderElement = document.getElementById('kSlider');
+const displayElement = document.getElementById('kValueDisplay');
+const uploadContainer = document.getElementById('upload-container');
+const fileInput = document.getElementById('fileInput');
+const chartDom = document.getElementById('chart-container');
+const buttonBar = document.getElementById('btnBar');
+const buttonPie = document.getElementById('btnPie');
+const buttonRGB = document.getElementById('RGB');
+const buttonLAB = document.getElementById('LAB');
+const canvas = document.createElement('canvas');
+let image = null;
+let chart = echarts.init(chartDom);
+let currentSpace = 1;
+let file = null;
+let colors = [];
+let c = [];
+let id = [];
+let a = [];
+let clusterColors = [];
+let pixelCounts = [];
+let clusterNames = [];
+let pieData = null;
+
+var barOption = 
+{
+    title: { text: '像素聚类结果 (柱状图)' },
+    tooltip: {}, 
+    xAxis: 
+    {
+        data: clusterNames
+    },
+    yAxis: {},
+    series: 
+    [{
+        name: '像素数量',
+        type: 'bar', 
+        data: pixelCounts,
+        itemStyle: 
+        {
+            color: function(params) 
+            {
+                return clusterColors[params.dataIndex];
+            }
+        }
+    }]
+};
+
+var pieOption = 
+{
+    title: { text: '像素聚类结果 (饼图)' },
+    tooltip: { trigger: 'item' },
+    color: clusterColors, 
+    series: 
+    [{
+        name: '像素数量',
+        type: 'pie', 
+        radius: '50%', 
+        data: pieData
+    }]
+};
+
+function SliderFunc1(event)
+{
+    let currentK = parseInt(event.target.value, 10);
+
+    displayElement.textContent = currentK;
+}
+
+function SliderFunc2(event)
+{
+    let newK = parseInt(event.target.value, 10);
+
+    if (colors.length == 0) return;
+
+    kmeans(newK);
+}
+
+function UploadFunc1()
+{
+    fileInput.click();
+}
+
+function UploadFunc2(event)
+{
+    event.preventDefault();
+
+    uploadContainer.classList.add('dragover');
+}
+
+function UploadFunc3()
+{
+    uploadContainer.classList.remove('dragover');
+}
+
+function dis(a, b)
+{
+    let x = (a[0] - b[0]) * (a[0] - b[0]);
+    let y = (a[1] - b[1]) * (a[1] - b[1]);
+    let z = (a[2] - b[2]) * (a[2] - b[2]);
+    return x + y + z;
+}
+
+function get_min(id, a)
+{
+    let ret = 0, min_dis = 1000000000;
+    
+    for (let i = 0; i < id.length; i += 1)
+    {
+        let d = dis(a, id[i]);
+        if (d < min_dis) ret = i, min_dis = d; 
+    }
+
+    return ret;
+}
+
+function rgbToHex(rgb) 
+{
+    let r = rgb[0];
+    let g = rgb[1];
+    let b = rgb[2];
+
+    function toHex(c)
+    {
+        let hex = c.toString(16);
+        return hex.padStart(2, '0');
+    }
+
+    return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+}
+
+function toMap(name, index)
+{
+    return {name: name, value: pixelCounts[index]};
+}
+
+function rgbToXyz(r, g, b) 
+{
+    let _r = (r / 255);
+    let _g = (g / 255);
+    let _b = (b / 255);
+
+    _r = _r > 0.04045 ? Math.pow((_r + 0.055) / 1.055, 2.4) : _r / 12.92;
+    _g = _g > 0.04045 ? Math.pow((_g + 0.055) / 1.055, 2.4) : _g / 12.92;
+    _b = _b > 0.04045 ? Math.pow((_b + 0.055) / 1.055, 2.4) : _b / 12.92;
+
+    _r *= 100; _g *= 100; _b *= 100;
+
+    const x = _r * 0.4124 + _g * 0.3576 + _b * 0.1805;
+    const y = _r * 0.2126 + _g * 0.7152 + _b * 0.0722;
+    const z = _r * 0.0193 + _g * 0.1192 + _b * 0.9505;
+    return [x, y, z];
+}
+
+function xyzToLab(xyz) 
+{
+    let [x, y, z] = xyz;
+    const xn = 95.047, yn = 100.0, zn = 108.883; 
+
+    x /= xn; y /= yn; z /= zn;
+
+    const f = (t) => t > 0.008856 ? Math.pow(t, 1/3) : (7.787 * t) + (16 / 116);
+
+    const l = (116 * f(y)) - 16;
+    const a = 500 * (f(x) - f(y));
+    const b = 200 * (f(y) - f(z));
+    return [l, a, b];
+}
+
+function rgbToLab(rgb) 
+{
+    return xyzToLab(rgbToXyz(rgb[0], rgb[1], rgb[2]));
+}
+
+function kmeans(k)
+{
+    id.length = 0;
+    a.length = 0;
+    c.length = 0;
+    clusterNames.length = 0;
+    pixelCounts.length = 0;
+    clusterColors.length = 0;
+
+    for (let i = 1; i <= k; i += 1)
+    {
+        let tmp = Math.floor(Math.random() * colors.length);
+
+        if (currentSpace == 1) id.push(colors[tmp]);
+        else id.push(rgbToLab(colors[tmp]));
+        
+        a.push(colors[tmp]);
+
+        c.push([]);
+    } 
+
+    //console.log(id);
+
+    for (let j = 1; j <= 10; j += 1)
+    {
+        for (let i = 0; i < k; i++) c[i].length = 0;
+        
+        for (let i = 0; i < colors.length; i += k)
+        {
+            if (currentSpace == 1) c[get_min(id, colors[i])].push(colors[i]);
+            else c[get_min(id, rgbToLab(colors[i]))].push(colors[i]);
+        }
+
+        id.length = 0;
+        a.length = 0;
+
+        for (let i = 0; i < k; i += 1)
+        {
+            let x = 0, y = 0, z = 0;
+            for (let p = 0; p < c[i].length; p += 1)
+            {
+                x += c[i][p][0], y += c[i][p][1], z += c[i][p][2];
+            }
+
+            let r = Math.round(x / c[i].length);
+            let g = Math.round(y / c[i].length);
+            let b = Math.round(z / c[i].length);
+
+            if (currentSpace == 1) id.push([r, g, b]);
+            else id.push(rgbToLab([r, g, b]));
+
+            a.push([r, g, b]);
+        }
+    }
+
+    for (let i = 0; i < k; i++)
+    {
+        clusterNames.push(i + 1); 
+        pixelCounts.push(c[i].length);
+        clusterColors.push(rgbToHex(a[i]));
+    } 
+
+    pieData = clusterNames.map(toMap);
+
+    pieOption.series[0].data = pieData; 
+    pieOption.color = clusterColors;
+
+    chart.setOption(barOption);
+}
+
+function processImage()
+{
+    let ctx = canvas.getContext('2d');
+
+    canvas.width = image.width;
+    canvas.height = image.height;
+
+    ctx.drawImage(image, 0, 0, image.width, image.height);
+
+    let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    let pixels = imageData.data;
+
+    colors.length = 0;
+
+    for (let i = 0; i < pixels.length; i += 4)
+    {
+        let r = pixels[i];
+        let g = pixels[i + 1];
+        let b = pixels[i + 2];
+        colors.push([r, g, b]);
+    }
+
+    kmeans(parseInt(document.getElementById('kSlider').value, 10));
+}
+
+function OnLoad(e)
+{
+    let imageUrl = e.target.result;
+    
+    image = new Image();
+    image.src = imageUrl;
+
+    uploadContainer.innerHTML = `<img src="${imageUrl}" id="preview-img">`;
+
+    image.onload = processImage;
+}
+
+function handleFiles(files)
+{
+    if (files.length > 0) file = files[0];
+    
+    if (file.type.startsWith('image/'))
+    {
+        reader = new FileReader();
+
+        reader.readAsDataURL(file);
+
+        reader.onload = OnLoad;
+    }   
+    else alert("请上传图片!")
+}
+
+function UploadFunc4(event)
+{
+    event.preventDefault(); 
+    uploadContainer.classList.remove('dragover');
+
+    const files = event.dataTransfer.files;
+    handleFiles(files);
+}
+
+function UploadFunc5(event)
+{
+    const files = event.target.files;
+    handleFiles(files);
+}
+
+function Change2Bar()
+{
+    chart.setOption(barOption, true);
+}
+
+function Change2Pie()
+{
+    chart.setOption(pieOption, true);
+}
+
+function Change2LAB()
+{
+    currentSpace = 2;
+
+    processImage();
+}
+
+function Change2RGB()
+{
+    currentSpace = 1;
+
+    processImage();
+}
+
+sliderElement.addEventListener('input', SliderFunc1);
+
+sliderElement.addEventListener('change', SliderFunc2);
+
+uploadContainer.addEventListener('click', UploadFunc1);
+
+uploadContainer.addEventListener('dragover', UploadFunc2);
+
+uploadContainer.addEventListener('dragleave', UploadFunc3);
+
+uploadContainer.addEventListener('drop', UploadFunc4);
+
+fileInput.addEventListener('change', UploadFunc5);
+
+buttonBar.addEventListener('click', Change2Bar);
+
+buttonPie.addEventListener('click', Change2Pie);
+
+buttonRGB.addEventListener('click', Change2RGB);
+
+buttonLAB.addEventListener('click', Change2LAB);
+
+</script>
+</body>
+</html>

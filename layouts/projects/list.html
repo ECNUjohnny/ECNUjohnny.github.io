@@ -1,34 +1,52 @@
-{{ define "main" }}
-<section class="container page">
+{{ define "content" }}
+<section class="container page projects-wrapper">
   <header>
     <h1 class="title">{{ .Title }}</h1>
   </header>
 
-  <div class="content">
-    <p>{{ .Content }}</p> 
+  <div class="projects-intro">
+    {{ .Content }}
+  </div>
 
-    <div class="projects-grid">
-      {{ range .Pages }}
-      <div class="project-card">
+  <div class="projects-grid">
+    {{ range .Pages }}
+    <div class="project-card">
+      <div class="project-header">
         <span class="project-date">{{ .Date.Format "2006-01-02" }}</span>
-        <h3 class="project-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-        
-        {{ if .Params.image }}
-        <a href="{{ .Permalink }}">
+      </div>
+      
+      <h3 class="project-title">
+        <a href="{{ if .Params.external_link }}{{ .Params.external_link }}{{ else }}{{ .Permalink }}{{ end }}" {{ if .Params.external_link }}target="_blank"{{ end }}>
+          {{ .Title }}
+        </a>
+      </h3>
+
+      {{ if .Params.image }}
+      <div class="project-image-wrapper">
+        <a href="{{ if .Params.external_link }}{{ .Params.external_link }}{{ else }}{{ .Permalink }}{{ end }}" {{ if .Params.external_link }}target="_blank"{{ end }}>
           <img src="{{ .Params.image }}" alt="{{ .Title }}" class="project-image">
         </a>
-        {{ end }}
-        
-        <p class="project-desc">{{ .Params.description }}</p>
-        
-        <div class="project-links">
-          {{ if .Params.website }}<a href="{{ .Params.website }}" target="_blank">● Website</a>{{ end }}
-          {{ if .Params.video }}<a href="{{ .Params.video }}" target="_blank">▶ Video</a>{{ end }}
-          {{ if .Params.code }}<a href="{{ .Params.code }}" target="_blank">■ Code</a>{{ end }}
-        </div>
       </div>
       {{ end }}
+
+      <p class="project-description">{{ .Params.description }}</p>
+
+      <div class="project-links">
+        {{ if .Params.external_link }}
+          <a href="{{ .Params.external_link }}" target="_blank">● Website</a>
+        {{ end }}
+        {{ if .Params.repo }}
+          <a href="{{ .Params.repo }}" target="_blank">■ Code</a>
+        {{ end }}
+        {{if .Params.video}}
+          <a href = "{{ .Params.vidoe }}" target = "_blank">▶ Video</a>
+        {{ end }}
+        {{if .Content}}
+          <a href = "{{ .Permalink }}">▼ Detail</a>
+        {{ end }}
+      </div>
     </div>
+    {{ end }}
   </div>
 </section>
 {{ end }}
