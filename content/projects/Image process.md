@@ -8,3 +8,5 @@ repo = "https://github.com/ECNUjohnny/Code/tree/main/html"
 +++
 
 Perfome kmeans algorithm on an image's pixels and visualize the final datas
+
+![](/images/image-process.png "User Interface")
