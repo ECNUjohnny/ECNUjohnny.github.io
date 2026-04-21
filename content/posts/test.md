@@ -8,6 +8,8 @@ tags = [
 ]
 +++
 
+Here are some source codes and their outcomes in Markdown(which is also right in LaTex system)
+
 **generic symbol**: 
 |source code|outcomes|
 |:---------:|:------:|
@@ -46,11 +48,56 @@ tags = [
 |`\tan`|$\tan$|
 |`\log_{n}{a}`|$\log_{n}{a}$|
 |`\ln{a}`|$\ln{a}$|
-|`\tan`|$\tan$|
-|`\tan`|$\tan$|
-|`\tan`|$\tan$|
-|`\tan`|$\tan$|
+|`\lim_{x\to 0}`|$\lim_{x\to 0}$|
+|`\sum_{i=1}^{n}`|$\sum_{i = 1}^{n}$|
+|`\int_{a}^{b}`|$\int_{a}^{b}$|
+|`\infty`|$\infty$|
 
+**matrix**:  
+```
+\begin{pmatrix}
+a & b
+c & d
+\end{pmatrix}
 
+```
 
+$$
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+$$  
+  
+    
+      
+```
+\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}
 
+```  
+  
+$$  
+\begin{bmatrix}  
+a & b \\  
+c & d  
+\end{bmatrix}  
+$$
+
+      
+```
+\begin{vmatrix}
+a & b \\
+c & d
+\end{vmatrix}
+
+```  
+
+$$  
+\begin{vmatrix}  
+a & b \\  
+c & d  
+\end{vmatrix}  
+$$
