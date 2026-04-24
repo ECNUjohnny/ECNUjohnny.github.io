@@ -1,4 +1,4 @@
 +++
 title = "Projects"
 +++
-以下是我为计算机图形学、学习和娱乐而制作的一些项目。
+Here are some projects I make for computer graphics, learning and fun
