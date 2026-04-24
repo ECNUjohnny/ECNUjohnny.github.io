@@ -20,13 +20,19 @@ noClasses = false
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)'], ['$', '$']]
 
 [params]
 author = "Johnny"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Johny's personal website"
 keywords = "blog,developer,personal"
-info = ["Graphcis student"]
+info = ["Graphics student"]
 avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
@@ -35,6 +41,8 @@ since = 2019
 commit = "https://github.com/luizdepra/hugo-coder/tree/"
 # Right To Left, shift content direction for languages such as Arabic
 rtl = false
+
+math = true
 # Specify light/dark colorscheme
 # Supported values:
 # "auto" (use preference set by browser)
@@ -186,32 +194,32 @@ name = "CV"
 weight = 5
 url = "/CV/"
 
-[languages.pt-br]
-languageName = ":brazil:"
-title = "João Ninguém"
+[languages.zh-cn]
+languageName = "中文"
+title = "周君岩"
 
-[languages.pt-br.params]
-author = "João Ninguém"
-info = "Full Stack DevOps e Mágico"
-description = "Sítio pessoal de João Ninguém"
-keywords = "blog,desenvolvedor,pessoal"
+[languages.zh-cn.params]
+author = "周君岩"
+info = "图形学学生"
+description = "周君岩的个人网站"
+keywords = "博客, 项目展示, 个人简历"
 
-[[languages.pt-br.menu.main]]
-name = "Sobre"
+[[languages.zh-cn.menu.main]]
+name = "关于"
 weight = 1
 url = "about/"
 
-[[languages.pt-br.menu.main]]
-name = "Blog"
+[[languages.zh-cn.menu.main]]
+name = "博客"
 weight = 2
 url = "posts/"
 
-[[languages.pt-br.menu.main]]
-name = "Projetos"
+[[languages.zh-cn.menu.main]]
+name = "项目"
 weight = 3
-url = "projects/"
+url = "/projects/"
 
-[[languages.pt-br.menu.main]]
-name = "Contato"
+[[languages.zh-cn.menu.main]]
+name = "简历"
 weight = 5
-url = "contact/"
+url = "/CV/"

@@ -1,9 +1,9 @@
 +++
 title = "About"
-description = "Hugo, the world's fastest framework for building websites"
+description = "About me"
 date = "2026-04-11"
 aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
+author = "Johnny"
 +++
 
 I am currently a student in undergraduate institute of East China Normal University (and that's why my avatar's name is ECNUjohnny). My future plan is to pursue a Phd degree in the USA, so perhaps in the future I will become "Taxas-Austain johnny", "Ohio-State johnny", or even "MIT johnny" if you think I can achieve such achievement!
