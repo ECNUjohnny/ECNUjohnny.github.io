@@ -1,7 +1,7 @@
 {{ define "content" }} <div class="track-container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
   
   <header>
-    <h1>📅 {{ .Title }} 的足迹汇总</h1>
+    <h1>📅 {{ .Title }} The tracks</h1>
     <div class="content">{{ .Content }}</div> 
   </header>
 
@@ -27,11 +27,11 @@
         const monthlyData = {{ $monthlyData | jsonify | safeJS }};
         
         // 初始化地图
-        const map = L.map('monthly-map').setView([31.23, 121.47], 13);
+        const map = L.map('monthly-map').setView([121.00, 156.00], 18);
         
         // 加载免费开源底图
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 19,
+          maxZoom: 25,
           attribution: '© OpenStreetMap'
         }).addTo(map);
 
@@ -68,8 +68,8 @@
     </script>
   
   {{ else }}
-    <div style="padding: 40px; text-align: center; background: #f8f9fa; border-radius: 12px; margin-top: 20px;">
-      <p style="color: #666; font-size: 1.1em;">🗺️ 这个月还没有记录下任何足迹哦。</p>
+    <div style="padding: 40px; text-align: center; background: #000000; border-radius: 12px; margin-top: 20px;">
+      <p style="color: #666; font-size: 1.1em;">🗺️ Nothing has been recorded in this month</p>
     </div>
   {{ end }}
 
