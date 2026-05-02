@@ -190,14 +190,14 @@ weight = 3
 url = "/projects/"
 
 [[languages.en.menu.main]]
-name = "Tracks"
+name = "Running"
 weight = 4
-url = "/tracks/"
+url = "/Running/"
 
 [[languages.en.menu.main]]
 name = "CV"
 weight = 5
-url = "/CV/"
+url = "/CV"
 
 [languages.zh-cn]
 languageName = "中文"
