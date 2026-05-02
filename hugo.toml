@@ -212,12 +212,12 @@ keywords = "博客, 项目展示, 个人简历"
 [[languages.zh-cn.menu.main]]
 name = "关于"
 weight = 1
-url = "about/"
+url = "/about"
 
 [[languages.zh-cn.menu.main]]
 name = "博客"
 weight = 2
-url = "posts/"
+url = "/posts/"
 
 [[languages.zh-cn.menu.main]]
 name = "项目"
@@ -227,4 +227,4 @@ url = "/projects/"
 [[languages.zh-cn.menu.main]]
 name = "简历"
 weight = 5
-url = "/CV/"
+url = "/CV"
