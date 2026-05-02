@@ -1,0 +1,39 @@
+{
+  "_activities-Fgr4GyYY.js": {
+    "file": "assets/activities-Fgr4GyYY.js",
+    "name": "activities"
+  },
+  "_vendors-S6yD6p_V.js": {
+    "file": "assets/vendors-S6yD6p_V.js",
+    "name": "vendors",
+    "isDynamicEntry": true
+  },
+  "index.html": {
+    "file": "assets/index-CATRAHwU.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_vendors-S6yD6p_V.js",
+      "_activities-Fgr4GyYY.js"
+    ],
+    "dynamicImports": [
+      "src/static/run_countries.ts",
+      "_vendors-S6yD6p_V.js"
+    ],
+    "css": [
+      "assets/index-6t7FBL9Z.css"
+    ]
+  },
+  "src/static/run_countries.ts": {
+    "file": "assets/run_countries-DdUSufv8.js",
+    "name": "run_countries",
+    "src": "src/static/run_countries.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_vendors-S6yD6p_V.js",
+      "_activities-Fgr4GyYY.js"
+    ]
+  }
+}
