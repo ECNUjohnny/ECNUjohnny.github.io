@@ -3,36 +3,36 @@
     "file": "assets/activities-Fgr4GyYY.js",
     "name": "activities"
   },
-  "_vendors-S6yD6p_V.js": {
-    "file": "assets/vendors-S6yD6p_V.js",
+  "_vendors-B_wvi9Nw.js": {
+    "file": "assets/vendors-B_wvi9Nw.js",
     "name": "vendors",
     "isDynamicEntry": true
   },
   "index.html": {
-    "file": "assets/index-CATRAHwU.js",
+    "file": "assets/index-DJs0qfp3.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
     "imports": [
-      "_vendors-S6yD6p_V.js",
+      "_vendors-B_wvi9Nw.js",
       "_activities-Fgr4GyYY.js"
     ],
     "dynamicImports": [
       "src/static/run_countries.ts",
-      "_vendors-S6yD6p_V.js"
+      "_vendors-B_wvi9Nw.js"
     ],
     "css": [
       "assets/index-6t7FBL9Z.css"
     ]
   },
   "src/static/run_countries.ts": {
-    "file": "assets/run_countries-DdUSufv8.js",
+    "file": "assets/run_countries-CBxZ387C.js",
     "name": "run_countries",
     "src": "src/static/run_countries.ts",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_vendors-S6yD6p_V.js",
+      "_vendors-B_wvi9Nw.js",
       "_activities-Fgr4GyYY.js"
     ]
   }
