@@ -1,6 +1,6 @@
 {
-  "_activities-y_ZDxtGY.js": {
-    "file": "assets/activities-y_ZDxtGY.js",
+  "_activities-DcSZ0bCd.js": {
+    "file": "assets/activities-DcSZ0bCd.js",
     "name": "activities"
   },
   "_vendors-B_wvi9Nw.js": {
@@ -45,7 +45,7 @@
     ]
   },
   "assets/year_summary_2026.svg": {
-    "file": "assets/year_summary_2026-YGhbWAAu.js",
+    "file": "assets/year_summary_2026-DKxfnesk.js",
     "name": "year_summary_2026",
     "src": "assets/year_summary_2026.svg",
     "isDynamicEntry": true,
@@ -54,13 +54,13 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-BNv16Om8.js",
+    "file": "assets/index-BjjOTnZN.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
     "imports": [
       "_vendors-B_wvi9Nw.js",
-      "_activities-y_ZDxtGY.js"
+      "_activities-DcSZ0bCd.js"
     ],
     "dynamicImports": [
       "src/static/run_countries.ts",
@@ -77,14 +77,14 @@
     ]
   },
   "src/static/run_countries.ts": {
-    "file": "assets/run_countries-BjjCWhIL.js",
+    "file": "assets/run_countries-DWy03PB4.js",
     "name": "run_countries",
     "src": "src/static/run_countries.ts",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
       "_vendors-B_wvi9Nw.js",
-      "_activities-y_ZDxtGY.js"
+      "_activities-DcSZ0bCd.js"
     ]
   }
 }
