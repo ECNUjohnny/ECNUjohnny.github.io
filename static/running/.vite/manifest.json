@@ -1,6 +1,6 @@
 {
-  "_activities-zjedm8nj.js": {
-    "file": "assets/activities-zjedm8nj.js",
+  "_activities-DXUiOM5s.js": {
+    "file": "assets/activities-DXUiOM5s.js",
     "name": "activities"
   },
   "_vendors-B_wvi9Nw.js": {
@@ -9,7 +9,7 @@
     "isDynamicEntry": true
   },
   "assets/github.svg": {
-    "file": "assets/github.svg-DhRU1hMa.js",
+    "file": "assets/github.svg-DoHSEG2t.js",
     "name": "github.svg",
     "src": "assets/github.svg",
     "isDynamicEntry": true,
@@ -18,7 +18,7 @@
     ]
   },
   "assets/github_2026.svg": {
-    "file": "assets/github_2026-CXIU4v1C.js",
+    "file": "assets/github_2026-Btmslxa3.js",
     "name": "github_2026",
     "src": "assets/github_2026.svg",
     "isDynamicEntry": true,
@@ -27,7 +27,7 @@
     ]
   },
   "assets/mol.svg": {
-    "file": "assets/mol.svg-rdXkxpSK.js",
+    "file": "assets/mol.svg-DMikh3_l.js",
     "name": "mol.svg",
     "src": "assets/mol.svg",
     "isDynamicEntry": true,
@@ -36,7 +36,7 @@
     ]
   },
   "assets/year_2026.svg": {
-    "file": "assets/year_2026-zXUlGkW_.js",
+    "file": "assets/year_2026-DAlFi2Ks.js",
     "name": "year_2026",
     "src": "assets/year_2026.svg",
     "isDynamicEntry": true,
@@ -45,7 +45,7 @@
     ]
   },
   "assets/year_summary_2026.svg": {
-    "file": "assets/year_summary_2026-EqxFX4C-.js",
+    "file": "assets/year_summary_2026-CZj8KjUW.js",
     "name": "year_summary_2026",
     "src": "assets/year_summary_2026.svg",
     "isDynamicEntry": true,
@@ -54,13 +54,13 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-C60wP9hx.js",
+    "file": "assets/index-DU2LldFx.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
     "imports": [
       "_vendors-B_wvi9Nw.js",
-      "_activities-zjedm8nj.js"
+      "_activities-DXUiOM5s.js"
     ],
     "dynamicImports": [
       "src/static/run_countries.ts",
@@ -77,14 +77,14 @@
     ]
   },
   "src/static/run_countries.ts": {
-    "file": "assets/run_countries-W4b4-Cfw.js",
+    "file": "assets/run_countries-wdJWj26e.js",
     "name": "run_countries",
     "src": "src/static/run_countries.ts",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
       "_vendors-B_wvi9Nw.js",
-      "_activities-zjedm8nj.js"
+      "_activities-DXUiOM5s.js"
     ]
   }
 }
