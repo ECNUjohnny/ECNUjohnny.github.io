@@ -3,13 +3,13 @@
     "file": "assets/Layout-BgDoSDKq.css",
     "src": "_Layout-BgDoSDKq.css"
   },
-  "_Layout-BxIzfzOk.js": {
-    "file": "assets/Layout-BxIzfzOk.js",
+  "_Layout-DOumDFBf.js": {
+    "file": "assets/Layout-DOumDFBf.js",
     "name": "Layout",
     "imports": [
       "_chunk-DtcAfS_W.js",
       "index.html",
-      "_useTheme-DIF2OFuM.js"
+      "_useTheme-BTDqIUJr.js"
     ],
     "css": [
       "assets/Layout-BgDoSDKq.css"
@@ -23,13 +23,13 @@
     "file": "assets/const-CLW7U49f.js",
     "name": "const"
   },
-  "_geoUtils-C4ARiNcc.js": {
-    "file": "assets/geoUtils-C4ARiNcc.js",
+  "_geoUtils-DHhLv-fr.js": {
+    "file": "assets/geoUtils-DHhLv-fr.js",
     "name": "geoUtils",
     "imports": [
       "_chunk-DtcAfS_W.js",
       "index.html",
-      "_useTheme-DIF2OFuM.js",
+      "_useTheme-BTDqIUJr.js",
       "_utils-iKLdvVuJ.js",
       "_const-CLW7U49f.js"
     ],
@@ -40,8 +40,8 @@
       "assets/world.zh-CrAdl_WO.json"
     ]
   },
-  "_svgUtils-BxgPa-V-.js": {
-    "file": "assets/svgUtils-BxgPa-V-.js",
+  "_svgUtils-Dly5Iwev.js": {
+    "file": "assets/svgUtils-Dly5Iwev.js",
     "name": "svgUtils",
     "imports": [
       "_chunk-DtcAfS_W.js",
@@ -58,11 +58,11 @@
       "assets/mol_walking.svg"
     ],
     "assets": [
-      "assets/activities-BoSjR86P.json"
+      "assets/activities-Cn48mOh-.json"
     ]
   },
-  "_useTheme-DIF2OFuM.js": {
-    "file": "assets/useTheme-DIF2OFuM.js",
+  "_useTheme-BTDqIUJr.js": {
+    "file": "assets/useTheme-BTDqIUJr.js",
     "name": "useTheme",
     "imports": [
       "_chunk-DtcAfS_W.js",
@@ -78,7 +78,7 @@
     ]
   },
   "assets/github.svg": {
-    "file": "assets/github-VBCEUoFv.js",
+    "file": "assets/github-OwpTR5Zq.js",
     "name": "github",
     "src": "assets/github.svg",
     "isDynamicEntry": true,
@@ -88,7 +88,7 @@
     ]
   },
   "assets/github_2026.svg": {
-    "file": "assets/github_2026-DBmcB-Wl.js",
+    "file": "assets/github_2026-BbEnt2pf.js",
     "name": "github_2026",
     "src": "assets/github_2026.svg",
     "isDynamicEntry": true,
@@ -98,7 +98,7 @@
     ]
   },
   "assets/mol.svg": {
-    "file": "assets/mol-kluBNOdS.js",
+    "file": "assets/mol-CUNariqe.js",
     "name": "mol",
     "src": "assets/mol.svg",
     "isDynamicEntry": true,
@@ -108,7 +108,7 @@
     ]
   },
   "assets/mol_running.svg": {
-    "file": "assets/mol_running-CFnleNsp.js",
+    "file": "assets/mol_running-lh6hqDD6.js",
     "name": "mol_running",
     "src": "assets/mol_running.svg",
     "isDynamicEntry": true,
@@ -118,7 +118,7 @@
     ]
   },
   "assets/mol_walking.svg": {
-    "file": "assets/mol_walking-C07ffrhT.js",
+    "file": "assets/mol_walking-usBEi7al.js",
     "name": "mol_walking",
     "src": "assets/mol_walking.svg",
     "isDynamicEntry": true,
@@ -128,7 +128,7 @@
     ]
   },
   "assets/year_2026.svg": {
-    "file": "assets/year_2026-DMUK2p47.js",
+    "file": "assets/year_2026-Dh2F7q4c.js",
     "name": "year_2026",
     "src": "assets/year_2026.svg",
     "isDynamicEntry": true,
@@ -138,7 +138,7 @@
     ]
   },
   "assets/year_summary_2026.svg": {
-    "file": "assets/year_summary_2026-CLgO3szv.js",
+    "file": "assets/year_summary_2026-ThOwwXEB.js",
     "name": "year_summary_2026",
     "src": "assets/year_summary_2026.svg",
     "isDynamicEntry": true,
@@ -148,7 +148,7 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-COOuP9uq.js",
+    "file": "assets/index-BqFM8HQ_.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -166,7 +166,7 @@
     ]
   },
   "node_modules/.pnpm/mapbox-gl@3.23.0/node_modules/mapbox-gl/dist/mapbox-gl.js": {
-    "file": "assets/mapbox-gl-DSq5H333.js",
+    "file": "assets/mapbox-gl-DxfQbLZ6.js",
     "name": "mapbox-gl",
     "src": "node_modules/.pnpm/mapbox-gl@3.23.0/node_modules/mapbox-gl/dist/mapbox-gl.js",
     "isDynamicEntry": true,
@@ -182,7 +182,7 @@
     "isDynamicEntry": true
   },
   "src/components/ActivityList/ActivityChart.tsx": {
-    "file": "assets/ActivityChart-vbtolBwB.js",
+    "file": "assets/ActivityChart-C7UuWEpA.js",
     "name": "ActivityChart",
     "src": "src/components/ActivityList/ActivityChart.tsx",
     "isDynamicEntry": true,
@@ -193,14 +193,14 @@
     ]
   },
   "src/components/RoutePreview/index.tsx": {
-    "file": "assets/RoutePreview-CB7g9jiq.js",
+    "file": "assets/RoutePreview-vkS8Sn1t.js",
     "name": "RoutePreview",
     "src": "src/components/RoutePreview/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_chunk-DtcAfS_W.js",
       "index.html",
-      "_geoUtils-C4ARiNcc.js",
+      "_geoUtils-DHhLv-fr.js",
       "_const-CLW7U49f.js"
     ],
     "css": [
@@ -208,27 +208,27 @@
     ]
   },
   "src/pages/404.tsx": {
-    "file": "assets/404-qgbPmTgv.js",
+    "file": "assets/404-DP-jQvlM.js",
     "name": "404",
     "src": "src/pages/404.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_Layout-BxIzfzOk.js"
+      "_Layout-DOumDFBf.js"
     ]
   },
   "src/pages/index.tsx": {
-    "file": "assets/pages-pqTUrK-4.js",
+    "file": "assets/pages-B_Flrtot.js",
     "name": "pages",
     "src": "src/pages/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_chunk-DtcAfS_W.js",
       "index.html",
-      "_svgUtils-BxgPa-V-.js",
-      "_geoUtils-C4ARiNcc.js",
-      "_Layout-BxIzfzOk.js",
-      "_useTheme-DIF2OFuM.js",
+      "_svgUtils-Dly5Iwev.js",
+      "_geoUtils-DHhLv-fr.js",
+      "_Layout-DOumDFBf.js",
+      "_useTheme-BTDqIUJr.js",
       "_utils-iKLdvVuJ.js",
       "_const-CLW7U49f.js"
     ],
@@ -240,15 +240,15 @@
     ]
   },
   "src/pages/total.tsx": {
-    "file": "assets/total-Con4WRJw.js",
+    "file": "assets/total-CFv_NdXi.js",
     "name": "total",
     "src": "src/pages/total.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_chunk-DtcAfS_W.js",
       "index.html",
-      "_svgUtils-BxgPa-V-.js",
-      "_useTheme-DIF2OFuM.js",
+      "_svgUtils-Dly5Iwev.js",
+      "_useTheme-BTDqIUJr.js",
       "_utils-iKLdvVuJ.js",
       "_const-CLW7U49f.js"
     ],
@@ -261,7 +261,7 @@
     ]
   },
   "src/static/activities.json": {
-    "file": "assets/activities-BoSjR86P.json",
+    "file": "assets/activities-Cn48mOh-.json",
     "src": "src/static/activities.json"
   },
   "src/static/run_countries.ts": {
