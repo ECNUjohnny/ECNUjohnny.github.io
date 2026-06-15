@@ -1,7 +1,7 @@
 +++
 title = "Game project"
 date = "2026-04-16"
-description = "This is a game i am currently making"
+description = "This is a game I am currently making"
 repo = "https://github.com/ECNUjohnny/Game-Project"
 image = "/images/game.png"
 +++
