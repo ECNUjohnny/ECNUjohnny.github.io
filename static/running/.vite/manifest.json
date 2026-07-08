@@ -1,19 +1,19 @@
 {
-  "_Layout-BJfHD8ni.js": {
-    "file": "assets/Layout-BJfHD8ni.js",
+  "_Layout-BgDoSDKq.css": {
+    "file": "assets/Layout-BgDoSDKq.css",
+    "src": "_Layout-BgDoSDKq.css"
+  },
+  "_Layout-CZuZSgrp.js": {
+    "file": "assets/Layout-CZuZSgrp.js",
     "name": "Layout",
     "imports": [
       "_chunk-DtcAfS_W.js",
       "index.html",
-      "_useTheme-DkGMCA12.js"
+      "_useTheme-P0WTCx58.js"
     ],
     "css": [
       "assets/Layout-BgDoSDKq.css"
     ]
-  },
-  "_Layout-BgDoSDKq.css": {
-    "file": "assets/Layout-BgDoSDKq.css",
-    "src": "_Layout-BgDoSDKq.css"
   },
   "_chunk-DtcAfS_W.js": {
     "file": "assets/chunk-DtcAfS_W.js",
@@ -23,13 +23,13 @@
     "file": "assets/const-BPxQwAGO.js",
     "name": "const"
   },
-  "_geoUtils-XR5FStcF.js": {
-    "file": "assets/geoUtils-XR5FStcF.js",
+  "_geoUtils-BsgJr8aV.js": {
+    "file": "assets/geoUtils-BsgJr8aV.js",
     "name": "geoUtils",
     "imports": [
       "_chunk-DtcAfS_W.js",
       "index.html",
-      "_useTheme-DkGMCA12.js",
+      "_useTheme-P0WTCx58.js",
       "_utils-DTVUX_Ax.js",
       "_const-BPxQwAGO.js"
     ],
@@ -40,8 +40,8 @@
       "assets/world.zh-CrAdl_WO.json"
     ]
   },
-  "_svgUtils-Bc_7NJ_o.js": {
-    "file": "assets/svgUtils-Bc_7NJ_o.js",
+  "_svgUtils-BwXPtSni.js": {
+    "file": "assets/svgUtils-BwXPtSni.js",
     "name": "svgUtils",
     "imports": [
       "_chunk-DtcAfS_W.js",
@@ -59,11 +59,11 @@
       "assets/mol_walking.svg"
     ],
     "assets": [
-      "assets/activities-CDYb2szw.json"
+      "assets/activities-CyzSGUH9.json"
     ]
   },
-  "_useTheme-DkGMCA12.js": {
-    "file": "assets/useTheme-DkGMCA12.js",
+  "_useTheme-P0WTCx58.js": {
+    "file": "assets/useTheme-P0WTCx58.js",
     "name": "useTheme",
     "imports": [
       "_chunk-DtcAfS_W.js",
@@ -79,7 +79,7 @@
     ]
   },
   "assets/github.svg": {
-    "file": "assets/github-B6l5SxCd.js",
+    "file": "assets/github-Du2XeiaY.js",
     "name": "github",
     "src": "assets/github.svg",
     "isDynamicEntry": true,
@@ -89,7 +89,7 @@
     ]
   },
   "assets/github_2026.svg": {
-    "file": "assets/github_2026-DsbrrrrF.js",
+    "file": "assets/github_2026-DBmL-jvX.js",
     "name": "github_2026",
     "src": "assets/github_2026.svg",
     "isDynamicEntry": true,
@@ -99,7 +99,7 @@
     ]
   },
   "assets/grid.svg": {
-    "file": "assets/grid-Ey1i-bpJ.js",
+    "file": "assets/grid-CHlOBHVr.js",
     "name": "grid",
     "src": "assets/grid.svg",
     "isDynamicEntry": true,
@@ -109,7 +109,7 @@
     ]
   },
   "assets/mol.svg": {
-    "file": "assets/mol-Be0q6kUt.js",
+    "file": "assets/mol-_2IACGp9.js",
     "name": "mol",
     "src": "assets/mol.svg",
     "isDynamicEntry": true,
@@ -119,7 +119,7 @@
     ]
   },
   "assets/mol_running.svg": {
-    "file": "assets/mol_running-CagfmjtN.js",
+    "file": "assets/mol_running-ETE_wmoO.js",
     "name": "mol_running",
     "src": "assets/mol_running.svg",
     "isDynamicEntry": true,
@@ -129,7 +129,7 @@
     ]
   },
   "assets/mol_walking.svg": {
-    "file": "assets/mol_walking-B9qk29yo.js",
+    "file": "assets/mol_walking-C0_aFtRv.js",
     "name": "mol_walking",
     "src": "assets/mol_walking.svg",
     "isDynamicEntry": true,
@@ -139,7 +139,7 @@
     ]
   },
   "assets/year_2026.svg": {
-    "file": "assets/year_2026-C6TYixVC.js",
+    "file": "assets/year_2026-CqrLw-Kc.js",
     "name": "year_2026",
     "src": "assets/year_2026.svg",
     "isDynamicEntry": true,
@@ -149,7 +149,7 @@
     ]
   },
   "assets/year_summary_2026.svg": {
-    "file": "assets/year_summary_2026-Dij98Enx.js",
+    "file": "assets/year_summary_2026-exK33nmS.js",
     "name": "year_summary_2026",
     "src": "assets/year_summary_2026.svg",
     "isDynamicEntry": true,
@@ -159,7 +159,7 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-D_6mf331.js",
+    "file": "assets/index-Bn8RNtsa.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -177,7 +177,7 @@
     ]
   },
   "node_modules/.pnpm/mapbox-gl@3.23.0/node_modules/mapbox-gl/dist/mapbox-gl.js": {
-    "file": "assets/mapbox-gl-Da1m1Re_.js",
+    "file": "assets/mapbox-gl-B94huP2y.js",
     "name": "mapbox-gl",
     "src": "node_modules/.pnpm/mapbox-gl@3.23.0/node_modules/mapbox-gl/dist/mapbox-gl.js",
     "isDynamicEntry": true,
@@ -193,7 +193,7 @@
     "isDynamicEntry": true
   },
   "src/components/ActivityList/ActivityChart.tsx": {
-    "file": "assets/ActivityChart-CrG_fYCN.js",
+    "file": "assets/ActivityChart-16ZOR9Xw.js",
     "name": "ActivityChart",
     "src": "src/components/ActivityList/ActivityChart.tsx",
     "isDynamicEntry": true,
@@ -204,14 +204,14 @@
     ]
   },
   "src/components/RoutePreview/index.tsx": {
-    "file": "assets/RoutePreview-Bz-i1yM1.js",
+    "file": "assets/RoutePreview-kc8tJ8Bk.js",
     "name": "RoutePreview",
     "src": "src/components/RoutePreview/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_chunk-DtcAfS_W.js",
       "index.html",
-      "_geoUtils-XR5FStcF.js",
+      "_geoUtils-BsgJr8aV.js",
       "_const-BPxQwAGO.js"
     ],
     "css": [
@@ -219,27 +219,27 @@
     ]
   },
   "src/pages/404.tsx": {
-    "file": "assets/404-C0RHZlXI.js",
+    "file": "assets/404-BIihlt9Y.js",
     "name": "404",
     "src": "src/pages/404.tsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_Layout-BJfHD8ni.js"
+      "_Layout-CZuZSgrp.js"
     ]
   },
   "src/pages/index.tsx": {
-    "file": "assets/pages-n0ppyKM2.js",
+    "file": "assets/pages-BdfTepDe.js",
     "name": "pages",
     "src": "src/pages/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_chunk-DtcAfS_W.js",
       "index.html",
-      "_svgUtils-Bc_7NJ_o.js",
-      "_geoUtils-XR5FStcF.js",
-      "_Layout-BJfHD8ni.js",
-      "_useTheme-DkGMCA12.js",
+      "_svgUtils-BwXPtSni.js",
+      "_geoUtils-BsgJr8aV.js",
+      "_Layout-CZuZSgrp.js",
+      "_useTheme-P0WTCx58.js",
       "_utils-DTVUX_Ax.js",
       "_const-BPxQwAGO.js"
     ],
@@ -251,15 +251,15 @@
     ]
   },
   "src/pages/total.tsx": {
-    "file": "assets/total-BxmHi2Y_.js",
+    "file": "assets/total-BYVpxrS5.js",
     "name": "total",
     "src": "src/pages/total.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_chunk-DtcAfS_W.js",
       "index.html",
-      "_svgUtils-Bc_7NJ_o.js",
-      "_useTheme-DkGMCA12.js",
+      "_svgUtils-BwXPtSni.js",
+      "_useTheme-P0WTCx58.js",
       "_utils-DTVUX_Ax.js",
       "_const-BPxQwAGO.js"
     ],
@@ -272,7 +272,7 @@
     ]
   },
   "src/static/activities.json": {
-    "file": "assets/activities-CDYb2szw.json",
+    "file": "assets/activities-CyzSGUH9.json",
     "src": "src/static/activities.json"
   },
   "src/static/run_countries.ts": {
