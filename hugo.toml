@@ -190,13 +190,18 @@ weight = 3
 url = "/projects/"
 
 [[languages.en.menu.main]]
-name = "Running"
+name = "Publications"
 weight = 4
+url = "/publication/"
+
+[[languages.en.menu.main]]
+name = "Running"
+weight = 5
 url = "https://ecnujohnny.github.io/running"
 
 [[languages.en.menu.main]]
 name = "CV"
-weight = 5
+weight = 6
 url = "/CV"
 
 [languages.zh-cn]
@@ -225,11 +230,16 @@ weight = 3
 url = "/projects/"
 
 [[languages.zh-cn.menu.main]]
-name = "运动"
+name = "论文"
 weight = 4
+url = "/publication/"
+
+[[languages.zh-cn.menu.main]]
+name = "运动"
+weight = 5
 url = "https://ecnujohnny.github.io/running"
 
 [[languages.zh-cn.menu.main]]
 name = "简历"
-weight = 5
+weight = 6
 url = "/CV"

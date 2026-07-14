@@ -1,0 +1,61 @@
+{{ define "content" }}
+<div class="publications-wrapper" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+  
+  <!-- 页面大标题 -->
+  <h1 class="page-title">{{ .Title }}</h1>
+  
+  <!-- 如果你在 _index.md 里写了介绍，会在这里显示 -->
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+
+  <!-- 论文列表开始 -->
+  <ul class="paper-list" style="list-style-type: none; padding: 0;">
+    
+    <!-- 遍历该目录下的所有文章，并按日期倒序（最新的在最上面） -->
+    {{ range .Pages.ByDate.Reverse }}
+    <li class="paper-item" style="margin-bottom: 2.5rem; border-bottom: 1px solid #eee; padding-bottom: 1.5rem;">
+      
+      <!-- 论文标题 -->
+      <h3 class="paper-title" style="margin-bottom: 0.3rem;">
+        <a href="{{ .Permalink }}" style="text-decoration: none; color: #2c3e50;">
+          {{ .Title }}
+        </a>
+      </h3>
+      
+      <!-- 作者列表 -->
+      <div class="paper-authors" style="font-size: 1rem; color: #444; margin-bottom: 0.3rem;">
+        {{ .Params.authors | markdownify }}
+      </div>
+      
+      <!-- 发表会议/期刊信息 或 论文状态 -->
+      <div class="paper-venue" style="font-size: 0.95rem; font-style: italic; color: #666; margin-bottom: 0.8rem;">
+        {{ if .Params.status }}
+          <span style="background-color: #f0f0f0; padding: 2px 6px; border-radius: 4px; font-size: 0.85rem; font-style: normal; margin-right: 8px;">
+            {{ .Params.status }}
+          </span>
+        {{ end }}
+        {{ .Params.venue }} ({{ .Date.Format "2006" }})
+      </div>
+
+      <!-- 资源链接按钮 (PDF, Code, Project Page) -->
+      <div class="paper-links" style="font-size: 0.9rem;">
+        {{ if .Params.pdf }}
+          <a href="{{ .Params.pdf }}" target="_blank" style="margin-right: 12px; color: #007bff;">[PDF]</a>
+        {{ end }}
+        
+        {{ if .Params.code }}
+          <a href="{{ .Params.code }}" target="_blank" style="margin-right: 12px; color: #007bff;">[Code]</a>
+        {{ end }}
+        
+        {{ if .Params.website }}
+          <a href="{{ .Params.website }}" target="_blank" style="margin-right: 12px; color: #007bff;">[Project Page]</a>
+        {{ end }}
+      </div>
+
+    </li>
+    {{ end }}
+    
+  </ul>
+</div>
+{{ end }}
