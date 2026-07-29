@@ -1,52 +1,143 @@
 {
-  "_Layout-BRc_pEX8.js": {
-    "file": "assets/Layout-BRc_pEX8.js",
-    "name": "Layout",
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html",
-      "_useTheme-UxtxVSXd.js"
-    ],
-    "css": [
-      "assets/Layout-BgDoSDKq.css"
-    ]
-  },
-  "_Layout-BgDoSDKq.css": {
-    "file": "assets/Layout-BgDoSDKq.css",
-    "src": "_Layout-BgDoSDKq.css"
-  },
-  "_chunk-DtcAfS_W.js": {
-    "file": "assets/chunk-DtcAfS_W.js",
+  "_chunk-CTC_7jcf.js": {
+    "file": "assets/chunk-CTC_7jcf.js",
     "name": "chunk"
   },
-  "_const-BPxQwAGO.js": {
-    "file": "assets/const-BPxQwAGO.js",
+  "_const-CkenmWyP.js": {
+    "file": "assets/const-CkenmWyP.js",
     "name": "const"
   },
-  "_geoUtils-na3_Rdxo.js": {
-    "file": "assets/geoUtils-na3_Rdxo.js",
-    "name": "geoUtils",
+  "_mapbox-gl-CgGF4EC7.js": {
+    "file": "assets/mapbox-gl-CgGF4EC7.js",
+    "name": "mapbox-gl",
     "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html",
-      "_useTheme-UxtxVSXd.js",
-      "_utils-DTVUX_Ax.js",
-      "_const-BPxQwAGO.js"
-    ],
-    "dynamicImports": [
-      "src/static/run_countries.ts"
-    ],
-    "assets": [
-      "assets/world.zh-CrAdl_WO.json"
+      "_chunk-CTC_7jcf.js",
+      "index.html"
     ]
   },
-  "_svgUtils-B_36IJKA.js": {
-    "file": "assets/svgUtils-B_36IJKA.js",
-    "name": "svgUtils",
+  "_polyline-CpDGAGG0.js": {
+    "file": "assets/polyline-CpDGAGG0.js",
+    "name": "polyline",
     "imports": [
-      "_chunk-DtcAfS_W.js",
+      "_chunk-CTC_7jcf.js"
+    ]
+  },
+  "assets/github.svg": {
+    "file": "assets/github-Kclb71U9.js",
+    "name": "github",
+    "src": "assets/github.svg",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CTC_7jcf.js",
+      "index.html"
+    ]
+  },
+  "assets/github_2026.svg": {
+    "file": "assets/github_2026-BnDLiWTp.js",
+    "name": "github_2026",
+    "src": "assets/github_2026.svg",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CTC_7jcf.js",
+      "index.html"
+    ]
+  },
+  "assets/grid.svg": {
+    "file": "assets/grid-GQgZaALk.js",
+    "name": "grid",
+    "src": "assets/grid.svg",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CTC_7jcf.js",
+      "index.html"
+    ]
+  },
+  "assets/mol.svg": {
+    "file": "assets/mol-oJPJu8fp.js",
+    "name": "mol",
+    "src": "assets/mol.svg",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CTC_7jcf.js",
+      "index.html"
+    ]
+  },
+  "assets/mol_running.svg": {
+    "file": "assets/mol_running-BTY4LVRX.js",
+    "name": "mol_running",
+    "src": "assets/mol_running.svg",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CTC_7jcf.js",
+      "index.html"
+    ]
+  },
+  "assets/mol_walking.svg": {
+    "file": "assets/mol_walking-Cw3CjFzs.js",
+    "name": "mol_walking",
+    "src": "assets/mol_walking.svg",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CTC_7jcf.js",
+      "index.html"
+    ]
+  },
+  "assets/year_2026.svg": {
+    "file": "assets/year_2026-BsPSLMcq.js",
+    "name": "year_2026",
+    "src": "assets/year_2026.svg",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CTC_7jcf.js",
+      "index.html"
+    ]
+  },
+  "assets/year_summary_2026.svg": {
+    "file": "assets/year_summary_2026-D2WSLZCo.js",
+    "name": "year_summary_2026",
+    "src": "assets/year_summary_2026.svg",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CTC_7jcf.js",
+      "index.html"
+    ]
+  },
+  "index.html": {
+    "file": "assets/index-CmHGPmJu.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_chunk-CTC_7jcf.js"
+    ],
+    "dynamicImports": [
+      "src/themes/dashboard/index.tsx",
+      "src/themes/classic/index.tsx"
+    ],
+    "assets": [
+      "assets/activities-DCkYLEWr.json"
+    ]
+  },
+  "src/assets/china-provinces.json": {
+    "file": "assets/china-provinces-Bh27yqiX.js",
+    "name": "china-provinces",
+    "src": "src/assets/china-provinces.json",
+    "isDynamicEntry": true
+  },
+  "src/static/activities.json": {
+    "file": "assets/activities-DCkYLEWr.json",
+    "src": "src/static/activities.json"
+  },
+  "src/themes/classic/index.tsx": {
+    "file": "assets/classic-B28lf9vS.js",
+    "name": "classic",
+    "src": "src/themes/classic/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CTC_7jcf.js",
       "index.html",
-      "_utils-DTVUX_Ax.js"
+      "_polyline-CpDGAGG0.js",
+      "_const-CkenmWyP.js"
     ],
     "dynamicImports": [
       "assets/year_2026.svg",
@@ -56,236 +147,46 @@
       "assets/grid.svg",
       "assets/mol.svg",
       "assets/mol_running.svg",
-      "assets/mol_walking.svg"
+      "assets/mol_walking.svg",
+      "_mapbox-gl-CgGF4EC7.js",
+      "src/themes/classic/static/run_countries.ts"
+    ],
+    "css": [
+      "assets/classic-Dqxvhkrm.css"
     ],
     "assets": [
-      "assets/activities-CvKU5dcP.json"
+      "assets/world.zh-CrAdl_WO.json"
     ]
   },
-  "_useTheme-UxtxVSXd.js": {
-    "file": "assets/useTheme-UxtxVSXd.js",
-    "name": "useTheme",
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html",
-      "_const-BPxQwAGO.js"
-    ]
-  },
-  "_utils-DTVUX_Ax.js": {
-    "file": "assets/utils-DTVUX_Ax.js",
-    "name": "utils",
-    "imports": [
-      "_const-BPxQwAGO.js"
-    ]
-  },
-  "assets/github.svg": {
-    "file": "assets/github-BgGQb5h4.js",
-    "name": "github",
-    "src": "assets/github.svg",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html"
-    ]
-  },
-  "assets/github_2026.svg": {
-    "file": "assets/github_2026-Io6cDdPR.js",
-    "name": "github_2026",
-    "src": "assets/github_2026.svg",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html"
-    ]
-  },
-  "assets/grid.svg": {
-    "file": "assets/grid-DSyoI3CP.js",
-    "name": "grid",
-    "src": "assets/grid.svg",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html"
-    ]
-  },
-  "assets/mol.svg": {
-    "file": "assets/mol-VQcebUBV.js",
-    "name": "mol",
-    "src": "assets/mol.svg",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html"
-    ]
-  },
-  "assets/mol_running.svg": {
-    "file": "assets/mol_running-CFOBa2LD.js",
-    "name": "mol_running",
-    "src": "assets/mol_running.svg",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html"
-    ]
-  },
-  "assets/mol_walking.svg": {
-    "file": "assets/mol_walking-DEBbAyyk.js",
-    "name": "mol_walking",
-    "src": "assets/mol_walking.svg",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html"
-    ]
-  },
-  "assets/year_2026.svg": {
-    "file": "assets/year_2026-D5ntxQKY.js",
-    "name": "year_2026",
-    "src": "assets/year_2026.svg",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html"
-    ]
-  },
-  "assets/year_summary_2026.svg": {
-    "file": "assets/year_summary_2026-DAiDIP_W.js",
-    "name": "year_summary_2026",
-    "src": "assets/year_summary_2026.svg",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html"
-    ]
-  },
-  "index.html": {
-    "file": "assets/index-7WnKrd_x.js",
-    "name": "index",
-    "src": "index.html",
-    "isEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js"
-    ],
-    "dynamicImports": [
-      "node_modules/.pnpm/react-ga4@3.0.1/node_modules/react-ga4/dist/index.mjs",
-      "src/pages/index.tsx",
-      "src/pages/total.tsx",
-      "src/pages/404.tsx"
-    ],
-    "css": [
-      "assets/index-DiAj1gbw.css"
-    ]
-  },
-  "node_modules/.pnpm/mapbox-gl@3.23.0/node_modules/mapbox-gl/dist/mapbox-gl.js": {
-    "file": "assets/mapbox-gl-D4s1sg-i.js",
-    "name": "mapbox-gl",
-    "src": "node_modules/.pnpm/mapbox-gl@3.23.0/node_modules/mapbox-gl/dist/mapbox-gl.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html"
-    ]
-  },
-  "node_modules/.pnpm/react-ga4@3.0.1/node_modules/react-ga4/dist/index.mjs": {
-    "file": "assets/dist-C88araOn.js",
-    "name": "dist",
-    "src": "node_modules/.pnpm/react-ga4@3.0.1/node_modules/react-ga4/dist/index.mjs",
-    "isDynamicEntry": true
-  },
-  "src/components/ActivityList/ActivityChart.tsx": {
-    "file": "assets/ActivityChart-YSeoftBL.js",
-    "name": "ActivityChart",
-    "src": "src/components/ActivityList/ActivityChart.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html",
-      "_utils-DTVUX_Ax.js"
-    ]
-  },
-  "src/components/RoutePreview/index.tsx": {
-    "file": "assets/RoutePreview-BnJ1AlWF.js",
-    "name": "RoutePreview",
-    "src": "src/components/RoutePreview/index.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html",
-      "_geoUtils-na3_Rdxo.js",
-      "_const-BPxQwAGO.js"
-    ],
-    "css": [
-      "assets/RoutePreview-BlerTLyU.css"
-    ]
-  },
-  "src/pages/404.tsx": {
-    "file": "assets/404-BY1ZDUD4.js",
-    "name": "404",
-    "src": "src/pages/404.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_Layout-BRc_pEX8.js"
-    ]
-  },
-  "src/pages/index.tsx": {
-    "file": "assets/pages-ZdmuFBGq.js",
-    "name": "pages",
-    "src": "src/pages/index.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html",
-      "_svgUtils-B_36IJKA.js",
-      "_geoUtils-na3_Rdxo.js",
-      "_Layout-BRc_pEX8.js",
-      "_useTheme-UxtxVSXd.js",
-      "_utils-DTVUX_Ax.js",
-      "_const-BPxQwAGO.js"
-    ],
-    "dynamicImports": [
-      "node_modules/.pnpm/mapbox-gl@3.23.0/node_modules/mapbox-gl/dist/mapbox-gl.js"
-    ],
-    "css": [
-      "assets/pages-DUenesFP.css"
-    ]
-  },
-  "src/pages/total.tsx": {
-    "file": "assets/total-DXJ23HaK.js",
-    "name": "total",
-    "src": "src/pages/total.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-DtcAfS_W.js",
-      "index.html",
-      "_svgUtils-B_36IJKA.js",
-      "_useTheme-UxtxVSXd.js",
-      "_utils-DTVUX_Ax.js",
-      "_const-BPxQwAGO.js"
-    ],
-    "dynamicImports": [
-      "src/components/RoutePreview/index.tsx",
-      "src/components/ActivityList/ActivityChart.tsx"
-    ],
-    "css": [
-      "assets/total-hriRMM4x.css"
-    ]
-  },
-  "src/static/activities.json": {
-    "file": "assets/activities-CvKU5dcP.json",
-    "src": "src/static/activities.json"
-  },
-  "src/static/run_countries.ts": {
-    "file": "assets/run_countries-B4299Jz8.js",
+  "src/themes/classic/static/run_countries.ts": {
+    "file": "assets/run_countries-_bTIvU1l.js",
     "name": "run_countries",
-    "src": "src/static/run_countries.ts",
+    "src": "src/themes/classic/static/run_countries.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_const-BPxQwAGO.js"
+      "_const-CkenmWyP.js"
     ]
   },
-  "src/static/world.zh.json": {
+  "src/themes/classic/static/world.zh.json": {
     "file": "assets/world.zh-CrAdl_WO.json",
-    "src": "src/static/world.zh.json"
+    "src": "src/themes/classic/static/world.zh.json"
+  },
+  "src/themes/dashboard/index.tsx": {
+    "file": "assets/dashboard-DCOyBH_g.js",
+    "name": "dashboard",
+    "src": "src/themes/dashboard/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-CTC_7jcf.js",
+      "index.html",
+      "_polyline-CpDGAGG0.js",
+      "_mapbox-gl-CgGF4EC7.js"
+    ],
+    "dynamicImports": [
+      "src/assets/china-provinces.json"
+    ],
+    "css": [
+      "assets/dashboard-ClWNMiSo.css"
+    ]
   }
 }
