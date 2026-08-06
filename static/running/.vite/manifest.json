@@ -7,8 +7,8 @@
     "file": "assets/const-CkenmWyP.js",
     "name": "const"
   },
-  "_mapbox-gl-C84RkT02.js": {
-    "file": "assets/mapbox-gl-C84RkT02.js",
+  "_mapbox-gl-Bh_O9oDo.js": {
+    "file": "assets/mapbox-gl-Bh_O9oDo.js",
     "name": "mapbox-gl",
     "imports": [
       "_chunk-CTC_7jcf.js",
@@ -23,7 +23,7 @@
     ]
   },
   "assets/github.svg": {
-    "file": "assets/github-DrsGlbCk.js",
+    "file": "assets/github-DLbdbzjX.js",
     "name": "github",
     "src": "assets/github.svg",
     "isDynamicEntry": true,
@@ -33,7 +33,7 @@
     ]
   },
   "assets/github_2026.svg": {
-    "file": "assets/github_2026-CkZ5zNyA.js",
+    "file": "assets/github_2026-Cr4bZjIk.js",
     "name": "github_2026",
     "src": "assets/github_2026.svg",
     "isDynamicEntry": true,
@@ -43,7 +43,7 @@
     ]
   },
   "assets/grid.svg": {
-    "file": "assets/grid-5hUxbw_H.js",
+    "file": "assets/grid-mzQncNtr.js",
     "name": "grid",
     "src": "assets/grid.svg",
     "isDynamicEntry": true,
@@ -53,7 +53,7 @@
     ]
   },
   "assets/mol.svg": {
-    "file": "assets/mol-JB8D9qBz.js",
+    "file": "assets/mol-CDmN-tif.js",
     "name": "mol",
     "src": "assets/mol.svg",
     "isDynamicEntry": true,
@@ -63,7 +63,7 @@
     ]
   },
   "assets/mol_running.svg": {
-    "file": "assets/mol_running-DebvVFxg.js",
+    "file": "assets/mol_running-BUKzqkjh.js",
     "name": "mol_running",
     "src": "assets/mol_running.svg",
     "isDynamicEntry": true,
@@ -73,7 +73,7 @@
     ]
   },
   "assets/mol_walking.svg": {
-    "file": "assets/mol_walking-D6985QZt.js",
+    "file": "assets/mol_walking-Cgcn7gkI.js",
     "name": "mol_walking",
     "src": "assets/mol_walking.svg",
     "isDynamicEntry": true,
@@ -83,7 +83,7 @@
     ]
   },
   "assets/year_2026.svg": {
-    "file": "assets/year_2026-CJP2L9K5.js",
+    "file": "assets/year_2026-Bj-2aukQ.js",
     "name": "year_2026",
     "src": "assets/year_2026.svg",
     "isDynamicEntry": true,
@@ -93,7 +93,7 @@
     ]
   },
   "assets/year_summary_2026.svg": {
-    "file": "assets/year_summary_2026-C8ivC9Y6.js",
+    "file": "assets/year_summary_2026-B8SORpBb.js",
     "name": "year_summary_2026",
     "src": "assets/year_summary_2026.svg",
     "isDynamicEntry": true,
@@ -103,7 +103,7 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-Dh-KIOSA.js",
+    "file": "assets/index-skXLUuwL.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -115,7 +115,7 @@
       "src/themes/classic/index.tsx"
     ],
     "assets": [
-      "assets/activities-DuzgfR0v.json"
+      "assets/activities-CxVD615b.json"
     ]
   },
   "src/assets/china-provinces.json": {
@@ -125,11 +125,11 @@
     "isDynamicEntry": true
   },
   "src/static/activities.json": {
-    "file": "assets/activities-DuzgfR0v.json",
+    "file": "assets/activities-CxVD615b.json",
     "src": "src/static/activities.json"
   },
   "src/themes/classic/index.tsx": {
-    "file": "assets/classic-WmDROmZN.js",
+    "file": "assets/classic-3KYaeSBA.js",
     "name": "classic",
     "src": "src/themes/classic/index.tsx",
     "isDynamicEntry": true,
@@ -148,7 +148,7 @@
       "assets/mol.svg",
       "assets/mol_running.svg",
       "assets/mol_walking.svg",
-      "_mapbox-gl-C84RkT02.js",
+      "_mapbox-gl-Bh_O9oDo.js",
       "src/themes/classic/static/run_countries.ts"
     ],
     "css": [
@@ -172,7 +172,7 @@
     "src": "src/themes/classic/static/world.zh.json"
   },
   "src/themes/dashboard/index.tsx": {
-    "file": "assets/dashboard-xNhnewr3.js",
+    "file": "assets/dashboard-Cj9-tufC.js",
     "name": "dashboard",
     "src": "src/themes/dashboard/index.tsx",
     "isDynamicEntry": true,
@@ -180,7 +180,7 @@
       "_chunk-CTC_7jcf.js",
       "index.html",
       "_polyline-CpDGAGG0.js",
-      "_mapbox-gl-C84RkT02.js"
+      "_mapbox-gl-Bh_O9oDo.js"
     ],
     "dynamicImports": [
       "src/assets/china-provinces.json"
