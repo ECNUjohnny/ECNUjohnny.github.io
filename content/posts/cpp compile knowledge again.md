@@ -7,22 +7,26 @@ tags = ["g++", "GNU", "Makefile"]
 
 ```
 CXX = g++
+DEPEND = -MMD -MP
 COMMAND = -o
 
 test04: test05.o test04.o
 	$(CXX) test05.o test04.o $(COMMAND) test4.exe
 
-test05.o: test04.h test05.cpp
-	$(CXX) -c test05.cpp $(COMMAND) test05.o
+test05.o: test05.cpp
+	$(CXX) $(DEPEND) -c test05.cpp $(COMMAND) test05.o
 
-test04.o: test04.h test04.cpp
-	$(CXX) -c test04.cpp $(COMMAND) test04.o
+test04.o: test04.cpp
+	$(CXX) $(DEPEND) -c test04.cpp $(COMMAND) test04.o
 
 
 .PHONY: clean
 
 clean: 
 	del /Q /F *.o test04.exe
+
+-include $(wildcard *.d)
+
 ```
 
 When facing such stucture: 
