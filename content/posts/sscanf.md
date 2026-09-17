@@ -1,8 +1,8 @@
 +++
 
-date = "2026-09-16"
+date = "2026-09-17"
 author = "Johnny"
-title = "cpp compile knowledge again"
+title = "sscanf"
 tags = ["c++"]
 
 +++
@@ -19,6 +19,8 @@ while (ssccanf(str + offset, "%d/%d/%d%n", &a, &b, &c, &chars))
 }
 
 ```
+
+-------
 
 if we want to read data like "1/2/3 1/2/3 1/2/3" and extract the number included in it, we can use codes like above. 
 
