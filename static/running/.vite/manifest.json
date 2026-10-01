@@ -1,6 +1,6 @@
 {
-  "_mapbox-gl-BY30Uxli.js": {
-    "file": "assets/mapbox-gl-BY30Uxli.js",
+  "_mapbox-gl-D_wf5gH7.js": {
+    "file": "assets/mapbox-gl-D_wf5gH7.js",
     "name": "mapbox-gl",
     "imports": [
       "_rolldown-runtime-8BhlS34s.js",
@@ -19,7 +19,7 @@
     "name": "rolldown-runtime"
   },
   "assets/github.svg": {
-    "file": "assets/github-CCIy41fD.js",
+    "file": "assets/github-A4j33ekd.js",
     "name": "github",
     "src": "assets/github.svg",
     "isDynamicEntry": true,
@@ -29,7 +29,7 @@
     ]
   },
   "assets/github_2026.svg": {
-    "file": "assets/github_2026-CYXKxsvl.js",
+    "file": "assets/github_2026-BrLzKmaI.js",
     "name": "github_2026",
     "src": "assets/github_2026.svg",
     "isDynamicEntry": true,
@@ -39,7 +39,7 @@
     ]
   },
   "assets/grid.svg": {
-    "file": "assets/grid-ctYq_eWJ.js",
+    "file": "assets/grid-DMaTOXRB.js",
     "name": "grid",
     "src": "assets/grid.svg",
     "isDynamicEntry": true,
@@ -49,7 +49,7 @@
     ]
   },
   "assets/mol.svg": {
-    "file": "assets/mol-BHDCkJ6W.js",
+    "file": "assets/mol-mTOJoPbc.js",
     "name": "mol",
     "src": "assets/mol.svg",
     "isDynamicEntry": true,
@@ -59,7 +59,7 @@
     ]
   },
   "assets/mol_cycling.svg": {
-    "file": "assets/mol_cycling-D9Hqqnn9.js",
+    "file": "assets/mol_cycling-CvF6_IrA.js",
     "name": "mol_cycling",
     "src": "assets/mol_cycling.svg",
     "isDynamicEntry": true,
@@ -69,7 +69,7 @@
     ]
   },
   "assets/mol_running.svg": {
-    "file": "assets/mol_running-BRXOIjw8.js",
+    "file": "assets/mol_running-DuIQ254v.js",
     "name": "mol_running",
     "src": "assets/mol_running.svg",
     "isDynamicEntry": true,
@@ -79,7 +79,7 @@
     ]
   },
   "assets/mol_walking.svg": {
-    "file": "assets/mol_walking-D2WUo4os.js",
+    "file": "assets/mol_walking-B-yTILUD.js",
     "name": "mol_walking",
     "src": "assets/mol_walking.svg",
     "isDynamicEntry": true,
@@ -89,7 +89,7 @@
     ]
   },
   "assets/year_2026.svg": {
-    "file": "assets/year_2026-4JbudjdG.js",
+    "file": "assets/year_2026-DGma8mgV.js",
     "name": "year_2026",
     "src": "assets/year_2026.svg",
     "isDynamicEntry": true,
@@ -99,7 +99,7 @@
     ]
   },
   "assets/year_summary_2026.svg": {
-    "file": "assets/year_summary_2026-DIOcPeVK.js",
+    "file": "assets/year_summary_2026-7W_ZRaUq.js",
     "name": "year_summary_2026",
     "src": "assets/year_summary_2026.svg",
     "isDynamicEntry": true,
@@ -109,7 +109,7 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-Bfx0MozR.js",
+    "file": "assets/index-BMTnv5rg.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -121,7 +121,7 @@
       "src/themes/classic/index.tsx"
     ],
     "assets": [
-      "assets/activities-CNUIwOY7.json"
+      "assets/activities-hHAE6Z6E.json"
     ]
   },
   "src/assets/china-provinces.json": {
@@ -131,11 +131,11 @@
     "isDynamicEntry": true
   },
   "src/static/activities.json": {
-    "file": "assets/activities-CNUIwOY7.json",
+    "file": "assets/activities-hHAE6Z6E.json",
     "src": "src/static/activities.json"
   },
   "src/themes/classic/index.tsx": {
-    "file": "assets/classic-BVfRqgG6.js",
+    "file": "assets/classic-CBLYyFnR.js",
     "name": "classic",
     "src": "src/themes/classic/index.tsx",
     "isDynamicEntry": true,
@@ -154,7 +154,7 @@
       "assets/mol_cycling.svg",
       "assets/mol_running.svg",
       "assets/mol_walking.svg",
-      "_mapbox-gl-BY30Uxli.js",
+      "_mapbox-gl-D_wf5gH7.js",
       "src/themes/classic/static/run_countries.ts"
     ],
     "css": [
@@ -165,7 +165,7 @@
     ]
   },
   "src/themes/classic/static/run_countries.ts": {
-    "file": "assets/run_countries-Be53AyL4.js",
+    "file": "assets/run_countries-DITmIMF5.js",
     "name": "run_countries",
     "src": "src/themes/classic/static/run_countries.ts",
     "isDynamicEntry": true,
@@ -178,14 +178,14 @@
     "src": "src/themes/classic/static/world.zh.json"
   },
   "src/themes/dashboard/index.tsx": {
-    "file": "assets/dashboard-DeYO1lVB.js",
+    "file": "assets/dashboard-DiaTluHa.js",
     "name": "dashboard",
     "src": "src/themes/dashboard/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-8BhlS34s.js",
       "index.html",
-      "_mapbox-gl-BY30Uxli.js",
+      "_mapbox-gl-D_wf5gH7.js",
       "_polyline-DPwSeosJ.js"
     ],
     "dynamicImports": [
