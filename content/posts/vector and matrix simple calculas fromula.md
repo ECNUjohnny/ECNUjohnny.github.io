@@ -2,7 +2,7 @@
 
 date = "2026-10-08"
 author = "Johnny"
-title = "sscanf"
+title = "vector and matrix calculas"
 tags = ["linear algebra"]
 
 +++
