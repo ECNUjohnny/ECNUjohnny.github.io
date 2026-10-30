@@ -1,6 +1,6 @@
 {
-  "_mapbox-gl-CpRISkCJ.js": {
-    "file": "assets/mapbox-gl-CpRISkCJ.js",
+  "_mapbox-gl-CLlKUaEp.js": {
+    "file": "assets/mapbox-gl-CLlKUaEp.js",
     "name": "mapbox-gl",
     "imports": [
       "_rolldown-runtime-XKyaHtl9.js"
@@ -18,7 +18,7 @@
     "name": "rolldown-runtime"
   },
   "assets/github.svg": {
-    "file": "assets/github-CcIPMYIw.js",
+    "file": "assets/github-BkZblfqw.js",
     "name": "github",
     "src": "assets/github.svg",
     "isDynamicEntry": true,
@@ -28,7 +28,7 @@
     ]
   },
   "assets/github_2026.svg": {
-    "file": "assets/github_2026-lTywt2ea.js",
+    "file": "assets/github_2026-apXXFsIZ.js",
     "name": "github_2026",
     "src": "assets/github_2026.svg",
     "isDynamicEntry": true,
@@ -38,7 +38,7 @@
     ]
   },
   "assets/grid.svg": {
-    "file": "assets/grid-BzwQxpA8.js",
+    "file": "assets/grid-CecX4W2Q.js",
     "name": "grid",
     "src": "assets/grid.svg",
     "isDynamicEntry": true,
@@ -48,7 +48,7 @@
     ]
   },
   "assets/mol.svg": {
-    "file": "assets/mol-uuXnAP3g.js",
+    "file": "assets/mol-Dwij4FP6.js",
     "name": "mol",
     "src": "assets/mol.svg",
     "isDynamicEntry": true,
@@ -58,7 +58,7 @@
     ]
   },
   "assets/mol_cycling.svg": {
-    "file": "assets/mol_cycling-DhuikQsX.js",
+    "file": "assets/mol_cycling-DQIT5FrN.js",
     "name": "mol_cycling",
     "src": "assets/mol_cycling.svg",
     "isDynamicEntry": true,
@@ -68,7 +68,7 @@
     ]
   },
   "assets/mol_running.svg": {
-    "file": "assets/mol_running-BBRzGNtz.js",
+    "file": "assets/mol_running-CMhZ-oGn.js",
     "name": "mol_running",
     "src": "assets/mol_running.svg",
     "isDynamicEntry": true,
@@ -78,7 +78,7 @@
     ]
   },
   "assets/mol_walking.svg": {
-    "file": "assets/mol_walking-CgFCgJX3.js",
+    "file": "assets/mol_walking-CnihyvIE.js",
     "name": "mol_walking",
     "src": "assets/mol_walking.svg",
     "isDynamicEntry": true,
@@ -88,7 +88,7 @@
     ]
   },
   "assets/year_2026.svg": {
-    "file": "assets/year_2026-E6Y4b9ym.js",
+    "file": "assets/year_2026-Dom8I5q7.js",
     "name": "year_2026",
     "src": "assets/year_2026.svg",
     "isDynamicEntry": true,
@@ -98,7 +98,7 @@
     ]
   },
   "assets/year_summary_2026.svg": {
-    "file": "assets/year_summary_2026-DRAc4Kv3.js",
+    "file": "assets/year_summary_2026-CiVx2YLY.js",
     "name": "year_summary_2026",
     "src": "assets/year_summary_2026.svg",
     "isDynamicEntry": true,
@@ -108,7 +108,7 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-B8qMCr2h.js",
+    "file": "assets/index-DIi-90FV.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -120,7 +120,7 @@
       "src/themes/classic/index.tsx"
     ],
     "assets": [
-      "assets/activities-XOny3wck.json"
+      "assets/activities-BRbJWuB-.json"
     ]
   },
   "src/assets/china-provinces.json": {
@@ -130,11 +130,11 @@
     "isDynamicEntry": true
   },
   "src/static/activities.json": {
-    "file": "assets/activities-XOny3wck.json",
+    "file": "assets/activities-BRbJWuB-.json",
     "src": "src/static/activities.json"
   },
   "src/themes/classic/index.tsx": {
-    "file": "assets/classic-t-feWwg8.js",
+    "file": "assets/classic-BkXvMvPd.js",
     "name": "classic",
     "src": "src/themes/classic/index.tsx",
     "isDynamicEntry": true,
@@ -153,7 +153,7 @@
       "assets/mol_cycling.svg",
       "assets/mol_running.svg",
       "assets/mol_walking.svg",
-      "_mapbox-gl-CpRISkCJ.js",
+      "_mapbox-gl-CLlKUaEp.js",
       "src/themes/classic/static/run_countries.ts"
     ],
     "css": [
@@ -164,7 +164,7 @@
     ]
   },
   "src/themes/classic/static/run_countries.ts": {
-    "file": "assets/run_countries-N42D5yWx.js",
+    "file": "assets/run_countries-CKhu_AQa.js",
     "name": "run_countries",
     "src": "src/themes/classic/static/run_countries.ts",
     "isDynamicEntry": true,
@@ -177,21 +177,21 @@
     "src": "src/themes/classic/static/world.zh.json"
   },
   "src/themes/dashboard/index.tsx": {
-    "file": "assets/dashboard-DPb9sPHa.js",
+    "file": "assets/dashboard-DWfUVi8e.js",
     "name": "dashboard",
     "src": "src/themes/dashboard/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-XKyaHtl9.js",
       "index.html",
-      "_mapbox-gl-CpRISkCJ.js",
+      "_mapbox-gl-CLlKUaEp.js",
       "_polyline-C1CkdGvj.js"
     ],
     "dynamicImports": [
       "src/assets/china-provinces.json"
     ],
     "css": [
-      "assets/dashboard-C4pBYBGq.css"
+      "assets/dashboard-DHknmT2h.css"
     ]
   }
 }
