@@ -18,7 +18,7 @@
     "name": "rolldown-runtime"
   },
   "assets/github.svg": {
-    "file": "assets/github-D2q2qyPQ.js",
+    "file": "assets/github-B4kZXDrC.js",
     "name": "github",
     "src": "assets/github.svg",
     "isDynamicEntry": true,
@@ -28,7 +28,7 @@
     ]
   },
   "assets/github_2026.svg": {
-    "file": "assets/github_2026-x3YluvhU.js",
+    "file": "assets/github_2026-dnrkbuZk.js",
     "name": "github_2026",
     "src": "assets/github_2026.svg",
     "isDynamicEntry": true,
@@ -38,7 +38,7 @@
     ]
   },
   "assets/grid.svg": {
-    "file": "assets/grid-CJL9I4VY.js",
+    "file": "assets/grid-CbuGD8I9.js",
     "name": "grid",
     "src": "assets/grid.svg",
     "isDynamicEntry": true,
@@ -48,7 +48,7 @@
     ]
   },
   "assets/mol.svg": {
-    "file": "assets/mol-s1h5QCbf.js",
+    "file": "assets/mol-D-Wr6Zbx.js",
     "name": "mol",
     "src": "assets/mol.svg",
     "isDynamicEntry": true,
@@ -58,7 +58,7 @@
     ]
   },
   "assets/mol_cycling.svg": {
-    "file": "assets/mol_cycling-B_A1tqpU.js",
+    "file": "assets/mol_cycling-Bz_j0Iyk.js",
     "name": "mol_cycling",
     "src": "assets/mol_cycling.svg",
     "isDynamicEntry": true,
@@ -68,7 +68,7 @@
     ]
   },
   "assets/mol_running.svg": {
-    "file": "assets/mol_running-C4PlKDjb.js",
+    "file": "assets/mol_running-6FubA2sy.js",
     "name": "mol_running",
     "src": "assets/mol_running.svg",
     "isDynamicEntry": true,
@@ -78,7 +78,7 @@
     ]
   },
   "assets/mol_walking.svg": {
-    "file": "assets/mol_walking-h0iVQx09.js",
+    "file": "assets/mol_walking-D34xlhlJ.js",
     "name": "mol_walking",
     "src": "assets/mol_walking.svg",
     "isDynamicEntry": true,
@@ -88,7 +88,7 @@
     ]
   },
   "assets/year_2026.svg": {
-    "file": "assets/year_2026-gbKy-P3D.js",
+    "file": "assets/year_2026-HlxgviHe.js",
     "name": "year_2026",
     "src": "assets/year_2026.svg",
     "isDynamicEntry": true,
@@ -98,7 +98,7 @@
     ]
   },
   "assets/year_summary_2026.svg": {
-    "file": "assets/year_summary_2026-B9sMn0aG.js",
+    "file": "assets/year_summary_2026-COcI1upZ.js",
     "name": "year_summary_2026",
     "src": "assets/year_summary_2026.svg",
     "isDynamicEntry": true,
@@ -108,7 +108,7 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-Dz1u9axV.js",
+    "file": "assets/index-B7SLJ5z7.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -120,7 +120,7 @@
       "src/themes/classic/index.tsx"
     ],
     "assets": [
-      "assets/activities-DVzhNZzO.json"
+      "assets/activities-D0vS_JQ_.json"
     ]
   },
   "src/assets/china-provinces.json": {
@@ -130,11 +130,11 @@
     "isDynamicEntry": true
   },
   "src/static/activities.json": {
-    "file": "assets/activities-DVzhNZzO.json",
+    "file": "assets/activities-D0vS_JQ_.json",
     "src": "src/static/activities.json"
   },
   "src/themes/classic/index.tsx": {
-    "file": "assets/classic-sx8Ua8VM.js",
+    "file": "assets/classic-pUSou4l1.js",
     "name": "classic",
     "src": "src/themes/classic/index.tsx",
     "isDynamicEntry": true,
@@ -164,7 +164,7 @@
     ]
   },
   "src/themes/classic/static/run_countries.ts": {
-    "file": "assets/run_countries-CdrIzbkb.js",
+    "file": "assets/run_countries-B_WHhKxx.js",
     "name": "run_countries",
     "src": "src/themes/classic/static/run_countries.ts",
     "isDynamicEntry": true,
@@ -177,7 +177,7 @@
     "src": "src/themes/classic/static/world.zh.json"
   },
   "src/themes/dashboard/index.tsx": {
-    "file": "assets/dashboard-Dm6EwJcP.js",
+    "file": "assets/dashboard-DVmTTAmz.js",
     "name": "dashboard",
     "src": "src/themes/dashboard/index.tsx",
     "isDynamicEntry": true,
